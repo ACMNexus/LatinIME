@@ -1,0 +1,15 @@
+/app/packer.properties
+/.idea
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+**/build
+/captures
+*.iml
+*.log
+gradlew/
+gradle/
+gradlew.bat
+gradlew

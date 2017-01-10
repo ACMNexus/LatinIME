@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.android.inputmethod.latin"
+        minSdkVersion 14
+        targetSdkVersion 17
+
+        testApplicationId "com.android.inputmethod.latin.tests"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    aaptOptions {
+        noCompress "dict"
+    }
+}
+
+dependencies {
+    compile files('libs/android-support-v4.jar')
+}
