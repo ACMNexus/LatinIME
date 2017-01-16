@@ -1,19 +1,23 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 21
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.android.inputmethod.latin"
-        minSdkVersion 14
-        targetSdkVersion 17
-
-        testApplicationId "com.android.inputmethod.latin.tests"
-        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        minSdkVersion 11
+        targetSdkVersion 23
 
         ndk {
-            abiFilters "armeabi"
+            moduleName "hello-jni"
+            stl "stlport_shared" //这个对应的是 APP_STL
+            cFlags "-std=c++11 -fexceptions"
         }
+    }
+
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir 'src/main/libs'
     }
 
     buildTypes {
@@ -29,5 +33,6 @@ android {
 }
 
 dependencies {
-    compile files('libs/android-support-v4.jar')
+//    compile files('libs/android-support-v4.jar')
+    compile 'com.android.support:appcompat-v7:23.0.1'
 }

@@ -17,7 +17,7 @@
 #ifndef LATINIME_SUGGEST_POLICY_H
 #define LATINIME_SUGGEST_POLICY_H
 
-#include "defines.h"
+#include "../../../defines.h"
 
 namespace latinime {
 

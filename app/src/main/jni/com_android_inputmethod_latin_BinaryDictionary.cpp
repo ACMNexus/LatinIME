@@ -16,18 +16,16 @@
 
 #define LOG_TAG "LatinIME: jni: BinaryDictionary"
 
-#include "com_android_inputmethod_latin_BinaryDictionary.h"
 
 #include <cstring> // for memset()
-
-#include "defines.h"
+#include "src/defines.h"
 #include "jni.h"
 #include "jni_common.h"
-#include "suggest/core/dictionary/dictionary.h"
-#include "suggest/core/suggest_options.h"
-#include "suggest/policyimpl/dictionary/dictionary_structure_with_buffer_policy_factory.h"
-#include "suggest/policyimpl/dictionary/utils/dict_file_writing_utils.h"
-#include "utils/autocorrection_threshold_utils.h"
+#include "src/suggest/core/dictionary/dictionary.h"
+#include "src/suggest/core/suggest_options.h"
+#include "src/suggest/policyimpl/dictionary/dictionary_structure_with_buffer_policy_factory.h"
+#include "src/suggest/policyimpl/dictionary/utils/dict_file_writing_utils.h"
+#include "src/utils/autocorrection_threshold_utils.h"
 
 namespace latinime {
 

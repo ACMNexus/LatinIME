@@ -14,11 +14,8 @@
  * limitations under the License.
  */
 
-#include "utils/char_utils.h"
-
+#include "char_utils.h"
 #include <cstdlib>
-
-#include "defines.h"
 
 namespace latinime {
 

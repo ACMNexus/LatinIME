@@ -68,4 +68,9 @@
 
     <color name="key_text_color_normal_ics">@android:color/white</color>
     <color name="key_text_color_functional_ics">@android:color/white</color>
+
+    <color name="tab_indicator_color">#0E4985</color>
+    <color name="title_back_color">#FF5500</color>
+    <color name="tab_title_bg">#2BC888</color>
+    <color name="white">#FFFFFF</color>
 </resources>

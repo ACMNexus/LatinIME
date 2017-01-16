@@ -17,9 +17,9 @@
 #ifndef LATINIME_SUGGEST_IMPL_H
 #define LATINIME_SUGGEST_IMPL_H
 
-#include "defines.h"
-#include "suggest/core/suggest_interface.h"
-#include "suggest/core/policy/suggest_policy.h"
+#include "../../defines.h"
+#include "suggest_interface.h"
+#include "policy/suggest_policy.h"
 
 namespace latinime {
 

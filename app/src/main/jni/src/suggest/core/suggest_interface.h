@@ -17,7 +17,7 @@
 #ifndef LATINIME_SUGGEST_INTERFACE_H
 #define LATINIME_SUGGEST_INTERFACE_H
 
-#include "defines.h"
+#include "../../defines.h"
 
 namespace latinime {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.inputmethod.latin.setup;
+package com.luooh.inputmethod.activitys;
 
 import android.app.Activity;
 import android.content.Context;
@@ -24,7 +24,7 @@ import android.provider.Settings;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 
-public final class SetupActivity extends Activity {
+public final class SplashActivity extends Activity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +72,7 @@ public final class SetupActivity extends Activity {
      * @param imm the {@link InputMethodManager}.
      * @return true if this IME is the current IME.
      */
-    /* package */ static boolean isThisImeCurrent(final Context context,
+    public static boolean isThisImeCurrent(final Context context,
             final InputMethodManager imm) {
         final InputMethodInfo imi = getInputMethodInfoOf(context.getPackageName(), imm);
         final String currentImeId = Settings.Secure.getString(

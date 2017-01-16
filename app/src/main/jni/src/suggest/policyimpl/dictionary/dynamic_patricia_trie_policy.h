@@ -17,13 +17,13 @@
 #ifndef LATINIME_DYNAMIC_PATRICIA_TRIE_POLICY_H
 #define LATINIME_DYNAMIC_PATRICIA_TRIE_POLICY_H
 
-#include "defines.h"
-#include "suggest/core/policy/dictionary_structure_with_buffer_policy.h"
-#include "suggest/policyimpl/dictionary/bigram/dynamic_bigram_list_policy.h"
-#include "suggest/policyimpl/dictionary/header/header_policy.h"
-#include "suggest/policyimpl/dictionary/shortcut/dynamic_shortcut_list_policy.h"
-#include "suggest/policyimpl/dictionary/utils/buffer_with_extendable_buffer.h"
-#include "suggest/policyimpl/dictionary/utils/mmapped_buffer.h"
+#include "../../../defines.h"
+#include "../../core/policy/dictionary_structure_with_buffer_policy.h"
+#include "bigram/dynamic_bigram_list_policy.h"
+#include "header/header_policy.h"
+#include "shortcut/dynamic_shortcut_list_policy.h"
+#include "utils/buffer_with_extendable_buffer.h"
+#include "utils/mmapped_buffer.h"
 
 namespace latinime {
 

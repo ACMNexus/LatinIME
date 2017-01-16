@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.inputmethod.latin.setup;
+package com.luooh.inputmethod.activitys;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -37,6 +37,7 @@ import com.android.inputmethod.compat.TextViewCompatUtils;
 import com.android.inputmethod.compat.ViewCompatUtils;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.settings.SettingsActivity;
+import com.android.inputmethod.latin.setup.SetupStepIndicatorView;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.StaticInnerHandlerWrapper;
 
@@ -94,7 +95,7 @@ public final class SetupWizardActivity extends Activity implements View.OnClickL
             }
             switch (msg.what) {
             case MSG_POLLING_IME_SETTINGS:
-                if (SetupActivity.isThisImeEnabled(setupWizardActivity, mImmInHandler)) {
+                if (SplashActivity.isThisImeEnabled(setupWizardActivity, mImmInHandler)) {
                     setupWizardActivity.invokeSetupWizardOfThisIme();
                     return;
                 }
@@ -278,7 +279,7 @@ public final class SetupWizardActivity extends Activity implements View.OnClickL
     }
 
     void invokeSubtypeEnablerOfThisIme() {
-        final InputMethodInfo imi = SetupActivity.getInputMethodInfoOf(getPackageName(), mImm);
+        final InputMethodInfo imi = SplashActivity.getInputMethodInfoOf(getPackageName(), mImm);
         if (imi == null) {
             return;
         }
@@ -302,10 +303,10 @@ public final class SetupWizardActivity extends Activity implements View.OnClickL
 
     private int determineSetupStepNumber() {
         mHandler.cancelPollingImeSettings();
-        if (!SetupActivity.isThisImeEnabled(this, mImm)) {
+        if (!SplashActivity.isThisImeEnabled(this, mImm)) {
             return STEP_1;
         }
-        if (!SetupActivity.isThisImeCurrent(this, mImm)) {
+        if (!SplashActivity.isThisImeCurrent(this, mImm)) {
             return STEP_2;
         }
         return STEP_3;

@@ -29,6 +29,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.android.inputmethod.compat.IntentCompatUtils;
 import com.android.inputmethod.latin.settings.Settings;
+import com.luooh.inputmethod.activitys.SplashActivity;
 
 /**
  * This class detects the {@link Intent#ACTION_MY_PACKAGE_REPLACED} broadcast intent when this IME
@@ -74,7 +75,7 @@ public final class LauncherIconVisibilityManager extends BroadcastReceiver {
         final boolean isInputMethodManagerValidForUserOfThisProcess =
                 !imm.getInputMethodList().isEmpty();
         final boolean isCurrentImeOfCurrentUser = isInputMethodManagerValidForUserOfThisProcess
-                && SetupActivity.isThisImeCurrent(context, imm);
+                && SplashActivity.isThisImeCurrent(context, imm);
         if (!isCurrentImeOfCurrentUser) {
             final int myPid = Process.myPid();
             Log.i(TAG, "Killing my process: pid=" + myPid);
@@ -98,7 +99,7 @@ public final class LauncherIconVisibilityManager extends BroadcastReceiver {
     }
 
     public static void updateSetupWizardIconVisibility(final Context context) {
-        final ComponentName setupWizardActivity = new ComponentName(context, SetupActivity.class);
+        final ComponentName setupWizardActivity = new ComponentName(context, SplashActivity.class);
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         final boolean stateHasSet;
         if (Settings.readShowSetupWizardIcon(prefs, context)) {
