@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_keyboard_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- To ensure that key preview popup is correctly placed when the current system locale is
+         one of RTL locales, layoutDirection="ltr" is needed in the SDK version 17+. -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/suggestions_strip_height">
+
+        <com.android.inputmethod.latin.suggestions.SuggestionStripView
+            android:id="@+id/suggestion_strip_view"
+            style="?attr/suggestionStripViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/suggestions_strip_height"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:paddingLeft="@dimen/suggestions_strip_padding"
+            android:paddingRight="@dimen/suggestions_strip_padding" />
+
+        <include
+            style="?attr/suggestionStripViewStyle"
+            layout="@layout/activity_market" />
+
+    </FrameLayout>
+
+    <!-- To ensure that key preview popup is correctly placed when the current system locale is
+         one of RTL locales, layoutDirection="ltr" is needed in the SDK version 17+. -->
+    <com.android.inputmethod.keyboard.MainKeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr" />
+
+</LinearLayout>
