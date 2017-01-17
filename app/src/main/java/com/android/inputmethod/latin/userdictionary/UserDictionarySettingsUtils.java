@@ -16,8 +16,8 @@
 
 package com.android.inputmethod.latin.userdictionary;
 
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.LocaleUtils;
+import com.luooh.inputmethod.R;
 
 import android.content.Context;
 import android.text.TextUtils;

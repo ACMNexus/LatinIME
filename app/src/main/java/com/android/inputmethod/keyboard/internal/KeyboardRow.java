@@ -19,15 +19,12 @@ package com.android.inputmethod.keyboard.internal;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.Xml;
-
 import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.ResourceUtils;
-
+import com.luooh.inputmethod.R;
 import org.xmlpull.v1.XmlPullParser;
-
 import java.util.ArrayDeque;
 
 /**

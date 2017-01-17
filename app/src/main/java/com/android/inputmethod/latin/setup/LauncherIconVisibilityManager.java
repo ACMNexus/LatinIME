@@ -30,6 +30,7 @@ import android.view.inputmethod.InputMethodManager;
 import com.android.inputmethod.compat.IntentCompatUtils;
 import com.android.inputmethod.latin.settings.Settings;
 import com.luooh.inputmethod.activitys.SplashActivity;
+import com.luooh.inputmethod.utils.InputMethodUtils;
 
 /**
  * This class detects the {@link Intent#ACTION_MY_PACKAGE_REPLACED} broadcast intent when this IME
@@ -75,7 +76,7 @@ public final class LauncherIconVisibilityManager extends BroadcastReceiver {
         final boolean isInputMethodManagerValidForUserOfThisProcess =
                 !imm.getInputMethodList().isEmpty();
         final boolean isCurrentImeOfCurrentUser = isInputMethodManagerValidForUserOfThisProcess
-                && SplashActivity.isThisImeCurrent(context, imm);
+                && InputMethodUtils.isThisImeCurrent(context, imm);
         if (!isCurrentImeOfCurrentUser) {
             final int myPid = Process.myPid();
             Log.i(TAG, "Killing my process: pid=" + myPid);

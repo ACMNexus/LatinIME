@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2011, The Android Open Source Project
@@ -18,44 +17,31 @@
 */
 -->
 
-<merge
-    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
->
-    <include
-        latin:keyboardLayout="@xml/key_styles_common" />
-    <Row
-        latin:keyWidth="9.0%p"
-    >
-        <include
-            latin:keyboardLayout="@xml/rowkeys_qwertz1" />
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <include latin:keyboardLayout="@xml/key_styles_common" />
+    <Row latin:keyWidth="9.0%p">
+        <include latin:keyboardLayout="@xml/rowkeys_qwertz1" />
         <Key
             latin:keyStyle="deleteKeyStyle"
             latin:keyWidth="fillRight" />
     </Row>
-    <Row
-        latin:keyWidth="9.0%p"
-    >
+    <Row latin:keyWidth="9.0%p">
         <include
-            latin:keyboardLayout="@xml/rowkeys_qwerty2"
-            latin:keyXPos="4.5%p" />
+            latin:keyXPos="4.5%p"
+            latin:keyboardLayout="@xml/rowkeys_qwerty2" />
         <Key
             latin:keyStyle="enterKeyStyle"
             latin:keyWidth="fillRight" />
     </Row>
-    <Row
-        latin:keyWidth="9.0%p"
-    >
+    <Row latin:keyWidth="9.0%p">
         <Key
             latin:keyStyle="shiftKeyStyle"
             latin:keyWidth="10.0%p" />
-        <include
-            latin:keyboardLayout="@xml/rowkeys_qwertz3" />
-        <include
-            latin:keyboardLayout="@xml/keys_exclamation_question" />
+        <include latin:keyboardLayout="@xml/rowkeys_qwertz3" />
+        <include latin:keyboardLayout="@xml/keys_exclamation_question" />
         <Key
             latin:keyStyle="shiftKeyStyle"
             latin:keyWidth="fillRight" />
     </Row>
-    <include
-        latin:keyboardLayout="@xml/row_qwerty4" />
+    <include latin:keyboardLayout="@xml/row_qwerty4" />
 </merge>

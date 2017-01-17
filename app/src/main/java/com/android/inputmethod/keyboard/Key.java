@@ -40,9 +40,8 @@ import com.android.inputmethod.keyboard.internal.KeyboardParams;
 import com.android.inputmethod.keyboard.internal.KeyboardRow;
 import com.android.inputmethod.keyboard.internal.MoreKeySpec;
 import com.android.inputmethod.latin.Constants;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.StringUtils;
-
+import com.luooh.inputmethod.R;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 

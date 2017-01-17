@@ -23,9 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.widget.Toast;
-
-import com.android.inputmethod.latin.R;
-
+import com.luooh.inputmethod.R;
 import java.util.Locale;
 import java.util.Random;
 import java.util.concurrent.LinkedBlockingQueue;

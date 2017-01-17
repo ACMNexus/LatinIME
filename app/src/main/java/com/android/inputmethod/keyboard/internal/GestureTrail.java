@@ -23,10 +23,9 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.os.SystemClock;
-
 import com.android.inputmethod.latin.Constants;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.ResizableIntArray;
+import com.luooh.inputmethod.R;
 
 /*
  * @attr ref R.styleable#MainKeyboardView_gestureTrailFadeoutStartDelay

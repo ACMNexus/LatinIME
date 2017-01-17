@@ -16,13 +16,13 @@
 
 package com.android.inputmethod.keyboard;
 
-import com.android.inputmethod.latin.R;
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
+
+import com.luooh.inputmethod.R;
 
 public class EmojiCategoryPageIndicatorView extends LinearLayout {
     private static final float BOTTOM_MARGIN_RATIO = 0.66f;

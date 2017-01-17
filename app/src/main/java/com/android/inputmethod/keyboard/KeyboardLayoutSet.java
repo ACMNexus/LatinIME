@@ -22,10 +22,12 @@ import static com.android.inputmethod.latin.Constants.ImeOption.NO_MICROPHONE_CO
 import static com.android.inputmethod.latin.Constants.ImeOption.NO_SETTINGS_KEY;
 import static com.android.inputmethod.latin.Constants.Subtype.ExtraValue.ASCII_CAPABLE;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
+import android.os.Build;
 import android.text.InputType;
 import android.util.Log;
 import android.util.SparseArray;
@@ -39,12 +41,12 @@ import com.android.inputmethod.keyboard.internal.KeyboardParams;
 import com.android.inputmethod.keyboard.internal.KeysCache;
 import com.android.inputmethod.latin.InputAttributes;
 import com.android.inputmethod.latin.LatinImeLogger;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SubtypeSwitcher;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.InputTypeUtils;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 import com.android.inputmethod.latin.utils.XmlParseUtils;
+import com.luooh.inputmethod.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -239,6 +241,7 @@ public final class KeyboardLayoutSet {
             return this;
         }
 
+        @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
         public Builder setSubtype(final InputMethodSubtype subtype) {
             final boolean asciiCapable = subtype.containsExtraValueKey(ASCII_CAPABLE);
             @SuppressWarnings("deprecation")

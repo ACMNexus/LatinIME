@@ -73,4 +73,15 @@
     <color name="title_back_color">#FF5500</color>
     <color name="tab_title_bg">#2BC888</color>
     <color name="white">#FFFFFF</color>
+    <color name="color_0f6fe0">#0f6fe0</color>
+    <color name="setup_wizard_text_color">#01ACFF</color>
+    <color name="setup_wizard_btn_text_disable">#48C3FF</color>
+    <color name="setup_wizard_btn_bg_disable">#48C3FF</color>
+    <color name="primary_color_setup_wizard">#8AD9FF</color>
+    <color name="setup_wizard_privacy_text">#8AD9FF</color>
+    <color name="primary_color_setup_wizard_light">#8AD9FF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
 </resources>

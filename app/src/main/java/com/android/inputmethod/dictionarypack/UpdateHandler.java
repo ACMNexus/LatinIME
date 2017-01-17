@@ -37,9 +37,9 @@ import android.util.Log;
 
 import com.android.inputmethod.compat.ConnectivityManagerCompatUtils;
 import com.android.inputmethod.compat.DownloadManagerCompatUtils;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.ApplicationUtils;
 import com.android.inputmethod.latin.utils.DebugLogUtils;
+import com.luooh.inputmethod.R;
 
 import java.io.File;
 import java.io.FileInputStream;

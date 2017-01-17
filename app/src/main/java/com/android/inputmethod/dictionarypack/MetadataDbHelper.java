@@ -24,8 +24,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.DebugLogUtils;
+import com.luooh.inputmethod.R;
 
 import java.io.File;
 import java.util.ArrayList;

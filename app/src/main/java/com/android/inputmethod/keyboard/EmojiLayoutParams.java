@@ -16,9 +16,8 @@
 
 package com.android.inputmethod.keyboard;
 
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.ResourceUtils;
-
+import com.luooh.inputmethod.R;
 import android.content.res.Resources;
 import android.support.v4.view.ViewPager;
 import android.widget.ImageView;

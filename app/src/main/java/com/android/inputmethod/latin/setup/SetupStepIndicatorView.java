@@ -22,9 +22,8 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.View;
-
 import com.android.inputmethod.compat.ViewCompatUtils;
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 public final class SetupStepIndicatorView extends View {
     private final Path mIndicatorPath = new Path();

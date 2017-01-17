@@ -40,9 +40,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.android.inputmethod.latin.R;
-
+import com.luooh.inputmethod.R;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Locale;

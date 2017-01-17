@@ -32,13 +32,13 @@ import com.android.inputmethod.keyboard.internal.KeyboardState;
 import com.android.inputmethod.latin.InputView;
 import com.android.inputmethod.latin.LatinIME;
 import com.android.inputmethod.latin.LatinImeLogger;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodManager;
 import com.android.inputmethod.latin.SubtypeSwitcher;
 import com.android.inputmethod.latin.WordComposer;
 import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SettingsValues;
 import com.android.inputmethod.latin.utils.ResourceUtils;
+import com.luooh.inputmethod.R;
 
 public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private static final String TAG = KeyboardSwitcher.class.getSimpleName();

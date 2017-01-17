@@ -25,11 +25,11 @@ import android.os.Environment;
 
 import com.android.inputmethod.latin.BinaryDictionaryFileDumper;
 import com.android.inputmethod.latin.BinaryDictionaryGetter;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.makedict.FormatSpec.FileHeader;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.DictionaryInfoUtils;
 import com.android.inputmethod.latin.utils.LocaleUtils;
+import com.luooh.inputmethod.R;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

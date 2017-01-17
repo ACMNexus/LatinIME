@@ -18,6 +18,7 @@ package com.android.inputmethod.latin.settings;
 
 import static com.android.inputmethod.latin.Constants.Subtype.ExtraValue.ASCII_CAPABLE;
 
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -25,6 +26,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -44,12 +46,12 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodManager;
 import com.android.inputmethod.latin.utils.AdditionalSubtypeUtils;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.IntentUtils;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
+import com.luooh.inputmethod.R;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
@@ -96,6 +98,7 @@ public final class AdditionalSubtypeSettings extends PreferenceFragment {
         private static final String TAG = SubtypeLocaleAdapter.class.getSimpleName();
         private static final boolean DEBUG_SUBTYPE_ID = false;
 
+        @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
         public SubtypeLocaleAdapter(final Context context) {
             super(context, android.R.layout.simple_spinner_item);
             setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

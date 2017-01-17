@@ -23,6 +23,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.luooh.inputmethod.R;
+
 public final class InputView extends LinearLayout {
     private View mSuggestionStripView;
     private View mKeyboardView;

@@ -32,13 +32,13 @@ import com.android.inputmethod.keyboard.internal.PointerTrackerQueue;
 import com.android.inputmethod.latin.Constants;
 import com.android.inputmethod.latin.InputPointers;
 import com.android.inputmethod.latin.LatinImeLogger;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.define.ProductionFlag;
 import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.CoordinateUtils;
 import com.android.inputmethod.latin.utils.ResourceUtils;
 import com.android.inputmethod.research.ResearchLogger;
+import com.luooh.inputmethod.R;
 
 import java.util.ArrayList;
 

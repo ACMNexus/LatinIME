@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 
@@ -15,11 +16,13 @@ import android.widget.AdapterView;
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener, AbsListView.OnItemClickListener{
 
     protected Activity mActivity;
+    protected InputMethodManager mImm;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.mActivity = this;
+        mImm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
     }
 
     protected void init() {

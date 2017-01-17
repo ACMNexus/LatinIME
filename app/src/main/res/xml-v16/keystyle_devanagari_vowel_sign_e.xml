@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2013, The Android Open Source Project
@@ -22,36 +21,29 @@
      API version 16 can't automatically render dotted circle for incomplete combining letter
      of some scripts. The files named res/xml/key_*.xml have this U+25CC hack, although the
      counterpart files named res/xml-v16/key_*.xml don't have this hack. -->
-<merge
-    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
->
+<merge xmlns:latin="http://schemas.android.com/apk-auto">
     <switch>
-        <case
-            latin:keyboardLayoutSet="hindi"
-        >
+        <case latin:keyboardLayoutSet="hindi">
             <!-- U+0947/U+0902: "ें" DEVANAGARI VOWEL SIGN E/DEVANAGARI SIGN ANUSVARA -->
             <key-style
-                latin:styleName="moreKeysDevanagariVowelSignE"
-                latin:moreKeys="&#x0947;&#x0902;" />
+                latin:moreKeys="&#x0947;&#x0902;"
+                latin:styleName="moreKeysDevanagariVowelSignE" />
         </case>
-        <case
-            latin:keyboardLayoutSet="nepali_traditional"
-        >
+        <case latin:keyboardLayoutSet="nepali_traditional">
             <!-- U+0903: "ः‍" DEVANAGARI SIGN VISARGA
                  U+093D: "ऽ" DEVANAGARI SIGN AVAGRAHA -->
             <key-style
-                latin:styleName="moreKeysDevanagariVowelSignE"
-                latin:moreKeys="&#x0903;,&#x093D;" />
+                latin:moreKeys="&#x0903;,&#x093D;"
+                latin:styleName="moreKeysDevanagariVowelSignE" />
         </case>
         <default>
-             <key-style
-                latin:styleName="moreKeysDevanagariVowelSignE" />
+            <key-style latin:styleName="moreKeysDevanagariVowelSignE" />
         </default>
     </switch>
     <!-- U+0947: "े" DEVANAGARI VOWEL SIGN E -->
     <key-style
-        latin:styleName="baseKeyDevanagariVowelSignE"
-        latin:parentStyle="moreKeysDevanagariVowelSignE"
         latin:keyLabel="&#x0947;"
-        latin:keyLabelFlags="fontNormal" />
+        latin:keyLabelFlags="fontNormal"
+        latin:parentStyle="moreKeysDevanagariVowelSignE"
+        latin:styleName="baseKeyDevanagariVowelSignE" />
 </merge>

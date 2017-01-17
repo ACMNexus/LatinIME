@@ -21,10 +21,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.view.View;
-
 import com.android.inputmethod.keyboard.PointerTracker;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.CoordinateUtils;
+import com.luooh.inputmethod.R;
 
 /**
  * Draw rubber band preview graphics during sliding key input.

@@ -19,9 +19,8 @@ package com.android.inputmethod.latin.settings;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.FragmentUtils;
+import com.luooh.inputmethod.R;
 
 public final class DebugSettingsActivity extends PreferenceActivity {
     private static final String DEFAULT_FRAGMENT = DebugSettings.class.getName();

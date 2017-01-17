@@ -58,7 +58,6 @@ import com.android.inputmethod.keyboard.internal.PreviewPlacerView;
 import com.android.inputmethod.keyboard.internal.SlidingKeyInputPreview;
 import com.android.inputmethod.latin.Constants;
 import com.android.inputmethod.latin.LatinImeLogger;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.define.ProductionFlag;
 import com.android.inputmethod.latin.settings.DebugSettings;
@@ -70,6 +69,7 @@ import com.android.inputmethod.latin.utils.TypefaceUtils;
 import com.android.inputmethod.latin.utils.UsabilityStudyLogUtils;
 import com.android.inputmethod.latin.utils.ViewLayoutUtils;
 import com.android.inputmethod.research.ResearchLogger;
+import com.luooh.inputmethod.R;
 
 import java.util.WeakHashMap;
 

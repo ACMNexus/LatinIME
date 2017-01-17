@@ -2,7 +2,7 @@ package com.luooh.inputmethod.activitys;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 import com.luooh.inputmethod.view.PagerSlidingTabStrip;
 
 public class MarketActivity extends BaseActivity {

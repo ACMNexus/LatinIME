@@ -27,7 +27,7 @@ import android.os.IBinder;
 import android.view.Window;
 import android.view.WindowManager.LayoutParams;
 
-import com.android.inputmethod.latin.R.string;
+import com.luooh.inputmethod.R;
 
 /**
  * Show a dialog when the user first opens the keyboard.
@@ -54,8 +54,8 @@ public class SplashScreen {
             final UserConsentListener listener) {
         mListener = listener;
         final Builder builder = new Builder(inputMethodService)
-                .setTitle(string.research_splash_title)
-                .setMessage(string.research_splash_content)
+                .setTitle(R.string.research_splash_title)
+                .setMessage(R.string.research_splash_content)
                 .setPositiveButton(android.R.string.yes,
                         new DialogInterface.OnClickListener() {
                             @Override

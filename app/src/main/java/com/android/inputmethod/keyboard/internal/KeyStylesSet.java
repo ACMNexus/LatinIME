@@ -19,11 +19,9 @@ package com.android.inputmethod.keyboard.internal;
 import android.content.res.TypedArray;
 import android.util.Log;
 import android.util.SparseArray;
-
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.XmlParseUtils;
-
+import com.luooh.inputmethod.R;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 

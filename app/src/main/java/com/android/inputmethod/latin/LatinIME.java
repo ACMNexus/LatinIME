@@ -104,6 +104,7 @@ import com.android.inputmethod.latin.utils.TargetPackageInfoGetterTask;
 import com.android.inputmethod.latin.utils.TextRange;
 import com.android.inputmethod.latin.utils.UserHistoryForgettingCurveUtils;
 import com.android.inputmethod.research.ResearchLogger;
+import com.luooh.inputmethod.R;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;

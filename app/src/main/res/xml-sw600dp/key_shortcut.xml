@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2012, The Android Open Source Project
@@ -18,32 +17,25 @@
 */
 -->
 
-<merge
-    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <switch>
         <case
-            latin:shortcutKeyEnabled="true"
             latin:clobberSettingsKey="false"
-        >
+            latin:shortcutKeyEnabled="true">
             <Key
-                latin:keyStyle="shortcutKeyStyle"
                 latin:keyLabelFlags="hasPopupHint|preserveCase"
+                latin:keyStyle="shortcutKeyStyle"
                 latin:moreKeys="!text/settings_as_more_key" />
         </case>
         <case
-            latin:shortcutKeyEnabled="true"
             latin:clobberSettingsKey="true"
-        >
-            <Key
-                latin:keyStyle="shortcutKeyStyle" />
+            latin:shortcutKeyEnabled="true">
+            <Key latin:keyStyle="shortcutKeyStyle" />
         </case>
         <case
-            latin:shortcutKeyEnabled="false"
             latin:clobberSettingsKey="false"
-        >
-            <Key
-                latin:keyStyle="settingsKeyStyle" />
+            latin:shortcutKeyEnabled="false">
+            <Key latin:keyStyle="settingsKeyStyle" />
         </case>
         <!-- shortcutKeyEnabled="false" clobberSettingsKey="true" -->
         <default>

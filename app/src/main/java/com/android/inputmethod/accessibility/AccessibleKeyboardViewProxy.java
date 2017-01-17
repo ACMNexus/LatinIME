@@ -33,7 +33,7 @@ import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardId;
 import com.android.inputmethod.keyboard.MainKeyboardView;
 import com.android.inputmethod.keyboard.PointerTracker;
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 public final class AccessibleKeyboardViewProxy extends AccessibilityDelegateCompat {
     private static final AccessibleKeyboardViewProxy sInstance = new AccessibleKeyboardViewProxy();

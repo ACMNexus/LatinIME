@@ -29,8 +29,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 public class FeedbackFragment extends Fragment implements OnClickListener {
     private static final String TAG = FeedbackFragment.class.getSimpleName();

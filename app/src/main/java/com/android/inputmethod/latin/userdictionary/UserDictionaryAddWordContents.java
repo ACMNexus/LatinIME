@@ -25,11 +25,9 @@ import android.provider.UserDictionary;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
-
 import com.android.inputmethod.compat.UserDictionaryCompatUtils;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.LocaleUtils;
-
+import com.luooh.inputmethod.R;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.TreeSet;

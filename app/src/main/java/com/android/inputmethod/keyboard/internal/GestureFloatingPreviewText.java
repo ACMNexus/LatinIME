@@ -24,11 +24,10 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.text.TextUtils;
 import android.view.View;
-
 import com.android.inputmethod.keyboard.PointerTracker;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.utils.CoordinateUtils;
+import com.luooh.inputmethod.R;
 
 /**
  * The class for single gesture preview text. The class for multiple gesture preview text will be

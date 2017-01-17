@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2010, The Android Open Source Project
@@ -18,16 +17,15 @@
 */
 -->
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/moreKeysKeyboardContainerStyle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    style="?attr/moreKeysKeyboardContainerStyle"
->
+    android:orientation="horizontal">
+
     <com.android.inputmethod.keyboard.MoreKeysKeyboardView
-        xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
         android:id="@+id/more_keys_keyboard_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 </LinearLayout>

@@ -19,23 +19,21 @@ package com.android.inputmethod.latin.utils;
 import static com.android.inputmethod.latin.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
 import static com.android.inputmethod.latin.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Build;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
-
-import com.android.inputmethod.latin.DictionaryFactory;
-import com.android.inputmethod.latin.R;
-
+import com.luooh.inputmethod.LatinIMEApplication;
+import com.luooh.inputmethod.R;
 import java.util.HashMap;
 import java.util.Locale;
 
 public final class SubtypeLocaleUtils {
     static final String TAG = SubtypeLocaleUtils.class.getSimpleName();
     // This class must be located in the same package as LatinIME.java.
-    private static final String RESOURCE_PACKAGE_NAME =
-            DictionaryFactory.class.getPackage().getName();
+    private static final String RESOURCE_PACKAGE_NAME = LatinIMEApplication.getInstance().getPackageName();
 
     // Special language code to represent "no language".
     public static final String NO_LANGUAGE = "zz";
@@ -270,6 +268,7 @@ public final class SubtypeLocaleUtils {
         return sKeyboardLayoutToDisplayNameMap.get(layoutName);
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
     public static String getKeyboardLayoutSetName(final InputMethodSubtype subtype) {
         String keyboardLayoutSet = subtype.getExtraValueOf(KEYBOARD_LAYOUT_SET);
         if (keyboardLayoutSet == null) {

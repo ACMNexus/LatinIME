@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2013, The Android Open Source Project
@@ -18,14 +17,14 @@
 */
 -->
 
-<Keyboard
-    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
-    latin:keyWidth="@fraction/emoji_keyboard_key_width"
+<Keyboard xmlns:latin="http://schemas.android.com/apk/res-auto"
     latin:keyLetterSize="90%p"
-    latin:rowHeight="@fraction/emoji_keyboard_row_height"
->
+    latin:keyWidth="@fraction/emoji_keyboard_key_width"
+    latin:rowHeight="@fraction/emoji_keyboard_row_height">
+
     <GridRows
+        latin:backgroundType="empty"
         latin:codesArray="@array/emoji_places"
-        latin:keyLabelFlags="fontNormal"
-        latin:backgroundType="empty" />
+        latin:keyLabelFlags="fontNormal" />
+
 </Keyboard>

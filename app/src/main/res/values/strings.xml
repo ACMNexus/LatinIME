@@ -697,4 +697,8 @@ Tip: You can download and remove dictionaries by going to &lt;b>Language &amp; i
          This resource is copied from packages/apps/Settings/res/values/strings.xml -->
     <!-- This resource is corresponding to msgid="5433275485499039199" -->
     <string name="user_dict_fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="setup_privacy_pre">By installing, you are agreeing to the Terms of Use.</string>
+    <string name="active_inputmethod_tips">please active the inputmethod</string>
+    <string name="active_current_inputmethod">1. Active InputMethod</string>
+    <string name="switch_current_inputmethod">2. Switch InputMethod</string>
 </resources>

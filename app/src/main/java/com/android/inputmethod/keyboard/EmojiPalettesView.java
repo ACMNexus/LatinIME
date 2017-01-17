@@ -47,11 +47,11 @@ import com.android.inputmethod.keyboard.internal.DynamicGridKeyboard;
 import com.android.inputmethod.keyboard.internal.ScrollKeyboardView;
 import com.android.inputmethod.keyboard.internal.ScrollViewWithNotifier;
 import com.android.inputmethod.latin.Constants;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SubtypeSwitcher;
 import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.utils.CollectionUtils;
 import com.android.inputmethod.latin.utils.ResourceUtils;
+import com.luooh.inputmethod.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

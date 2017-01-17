@@ -96,8 +96,7 @@ final public class BinaryDictionaryGetter {
             return null;
         }
         try {
-            return AssetFileAddress.makeFromFileNameAndOffset(
-                    context.getApplicationInfo().sourceDir, afd.getStartOffset(), afd.getLength());
+            return AssetFileAddress.makeFromFileNameAndOffset(context.getApplicationInfo().sourceDir, afd.getStartOffset(), afd.getLength());
         } finally {
             try {
                 afd.close();

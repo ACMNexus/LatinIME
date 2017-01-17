@@ -23,9 +23,8 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
-
 import com.android.inputmethod.annotations.UsedForTesting;
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

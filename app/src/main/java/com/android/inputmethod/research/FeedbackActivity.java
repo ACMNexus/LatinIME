@@ -18,8 +18,7 @@ package com.android.inputmethod.research;
 
 import android.app.Activity;
 import android.os.Bundle;
-
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 public class FeedbackActivity extends Activity {
     @Override

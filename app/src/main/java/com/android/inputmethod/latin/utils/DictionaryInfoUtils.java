@@ -24,9 +24,9 @@ import android.util.Log;
 
 import com.android.inputmethod.latin.AssetFileAddress;
 import com.android.inputmethod.latin.BinaryDictionaryGetter;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.makedict.BinaryDictIOUtils;
 import com.android.inputmethod.latin.makedict.FormatSpec.FileHeader;
+import com.luooh.inputmethod.R;
 
 import java.io.File;
 import java.util.ArrayList;

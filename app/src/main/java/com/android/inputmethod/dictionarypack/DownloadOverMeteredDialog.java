@@ -24,7 +24,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 import java.util.Locale;
 

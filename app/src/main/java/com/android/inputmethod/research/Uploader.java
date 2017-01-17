@@ -26,10 +26,8 @@ import android.net.NetworkInfo;
 import android.os.BatteryManager;
 import android.text.TextUtils;
 import android.util.Log;
-
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.define.ProductionFlag;
-
+import com.luooh.inputmethod.R;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;

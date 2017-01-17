@@ -25,11 +25,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
-
 import com.android.inputmethod.compat.DownloadManagerCompatUtils;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.ApplicationUtils;
 import com.android.inputmethod.latin.utils.DebugLogUtils;
+import com.luooh.inputmethod.R;
 
 import java.util.LinkedList;
 import java.util.Queue;

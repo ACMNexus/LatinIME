@@ -16,6 +16,7 @@
 
 package com.android.inputmethod.accessibility;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.inputmethodservice.InputMethodService;
 import android.media.AudioManager;
@@ -32,11 +33,10 @@ import android.view.ViewParent;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 import android.view.inputmethod.EditorInfo;
-
 import com.android.inputmethod.compat.SettingsSecureCompatUtils;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.utils.InputTypeUtils;
+import com.luooh.inputmethod.R;
 
 public final class AccessibilityUtils {
     private static final String TAG = AccessibilityUtils.class.getSimpleName();
@@ -201,6 +201,7 @@ public final class AccessibilityUtils {
      * @param view The source view.
      * @param text The text to speak.
      */
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     public void announceForAccessibility(final View view, final CharSequence text) {
         if (!mAccessibilityManager.isEnabled()) {
             Log.e(TAG, "Attempted to speak when accessibility was disabled!");

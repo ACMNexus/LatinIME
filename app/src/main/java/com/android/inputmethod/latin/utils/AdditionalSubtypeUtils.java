@@ -24,10 +24,9 @@ import static com.android.inputmethod.latin.Constants.Subtype.ExtraValue.UNTRANS
 import android.os.Build;
 import android.text.TextUtils;
 import android.view.inputmethod.InputMethodSubtype;
-
 import com.android.inputmethod.compat.InputMethodSubtypeCompatUtils;
 import com.android.inputmethod.latin.Constants;
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 import java.util.ArrayList;
 

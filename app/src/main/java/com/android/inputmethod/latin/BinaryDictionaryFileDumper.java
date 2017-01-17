@@ -33,6 +33,7 @@ import com.android.inputmethod.latin.utils.DictionaryInfoUtils;
 import com.android.inputmethod.latin.utils.DictionaryInfoUtils.DictionaryInfo;
 import com.android.inputmethod.latin.utils.FileTransforms;
 import com.android.inputmethod.latin.utils.MetadataFileUriGetter;
+import com.luooh.inputmethod.R;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

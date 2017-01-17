@@ -27,7 +27,7 @@ import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.KeyDetector;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardView;
-import com.android.inputmethod.latin.R;
+import com.luooh.inputmethod.R;
 
 /**
  * This is an extended {@link KeyboardView} class that hosts a vertical scroll keyboard.

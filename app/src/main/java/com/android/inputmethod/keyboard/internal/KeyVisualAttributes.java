@@ -20,9 +20,8 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.SparseIntArray;
-
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.ResourceUtils;
+import com.luooh.inputmethod.R;
 
 public final class KeyVisualAttributes {
     public final Typeface mTypeface;

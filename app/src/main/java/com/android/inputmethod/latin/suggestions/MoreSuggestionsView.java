@@ -22,9 +22,9 @@ import android.util.Log;
 
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.MoreKeysKeyboardView;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.suggestions.MoreSuggestions.MoreSuggestionsListener;
+import com.luooh.inputmethod.R;
 
 /**
  * A view that renders a virtual {@link MoreSuggestions}. It handles rendering of keys and detecting

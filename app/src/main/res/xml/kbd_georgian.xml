@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2012, The Android Open Source Project
@@ -18,9 +17,8 @@
 */
 -->
 
-<Keyboard
-    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
->
-    <include
-        latin:keyboardLayout="@xml/rows_georgian" />
+<Keyboard xmlns:latin="http://schemas.android.com/apk/res-auto">
+
+    <include latin:keyboardLayout="@xml/rows_georgian" />
+
 </Keyboard>

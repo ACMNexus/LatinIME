@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2013, The Android Open Source Project
@@ -22,28 +21,24 @@
      API version 16 can't automatically render dotted circle for incomplete combining letter
      of some scripts. The files named res/xml/key_*.xml have this U+25CC hack, although the
      counterpart files named res/xml-v16/key_*.xml don't have this hack. -->
-<merge
-    xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+
     <switch>
-        <case
-            latin:keyboardLayoutSet="hindi"
-        >
+        <case latin:keyboardLayoutSet="hindi">
             <!-- U+097D: "ॽ" DEVANAGARI LETTER GLOTTAL STOP
                  U+0970: "॰" DEVANAGARI ABBREVIATION SIGN
                  U+093D: "ऽ" DEVANAGARI SIGN AVAGRAHA -->
-             <key-style
-                latin:styleName="moreKeysDevanagariSignNukta"
-                latin:moreKeys="&#x097D;,&#x0970;,&#x093D;" />
+            <key-style
+                latin:moreKeys="&#x097D;,&#x0970;,&#x093D;"
+                latin:styleName="moreKeysDevanagariSignNukta" />
         </case>
         <default>
-             <key-style
-                latin:styleName="moreKeysDevanagariSignNukta" />
+            <key-style latin:styleName="moreKeysDevanagariSignNukta" />
         </default>
     </switch>
     <!-- U+093C: "़" DEVANAGARI SIGN NUKTA -->
     <Key
-        latin:keyStyle="moreKeysDevanagariSignNukta"
         latin:keyLabel="&#x093C;"
-        latin:keyLabelFlags="fontNormal" />
+        latin:keyLabelFlags="fontNormal"
+        latin:keyStyle="moreKeysDevanagariSignNukta" />
 </merge>

@@ -34,6 +34,7 @@ import android.view.inputmethod.InputMethodSubtype;
 import com.android.inputmethod.annotations.UsedForTesting;
 import com.android.inputmethod.keyboard.KeyboardSwitcher;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
+import com.luooh.inputmethod.R;
 
 import java.util.List;
 import java.util.Locale;

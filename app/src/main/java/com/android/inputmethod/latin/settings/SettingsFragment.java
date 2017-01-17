@@ -39,7 +39,6 @@ import android.view.inputmethod.InputMethodSubtype;
 import com.android.inputmethod.common.InputMethodSettingsFragment;
 import com.android.inputmethod.dictionarypack.DictionarySettingsActivity;
 import com.android.inputmethod.latin.AudioAndHapticFeedbackManager;
-import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.SubtypeSwitcher;
 import com.android.inputmethod.latin.define.ProductionFlag;
 import com.android.inputmethod.latin.setup.LauncherIconVisibilityManager;
@@ -50,6 +49,8 @@ import com.android.inputmethod.latin.utils.ApplicationUtils;
 import com.android.inputmethod.latin.utils.FeedbackUtils;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 import com.android.inputmethod.research.ResearchLogger;
+import com.luooh.inputmethod.R;
+
 import java.util.TreeSet;
 
 public final class SettingsFragment extends InputMethodSettingsFragment

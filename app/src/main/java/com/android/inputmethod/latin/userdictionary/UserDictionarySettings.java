@@ -16,8 +16,6 @@
 
 package com.android.inputmethod.latin.userdictionary;
 
-import com.android.inputmethod.latin.R;
-
 import android.app.ListFragment;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -39,6 +37,8 @@ import android.widget.ListView;
 import android.widget.SectionIndexer;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import com.luooh.inputmethod.R;
 
 import java.util.Locale;
 
