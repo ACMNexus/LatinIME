@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
 ** Copyright 2011, The Android Open Source Project
@@ -19,6 +18,7 @@
 -->
 
 <resources>
+
     <style name="KeyboardTheme.GB" parent="KeyboardIcons.GB">
         <item name="keyboardStyle">@style/Keyboard.GB</item>
         <item name="keyboardViewStyle">@style/KeyboardView.GB</item>
@@ -30,6 +30,7 @@
         <item name="suggestionStripViewStyle">@style/SuggestionStripView.GB</item>
         <item name="suggestionWordStyle">@style/SuggestionWord.GB</item>
     </style>
+
     <style name="KeyboardIcons.GB">
         <!-- Keyboard icons -->
         <item name="iconShiftKey">@drawable/sym_keyboard_shift_holo_dark</item>
@@ -52,10 +53,8 @@
         <item name="iconZwjKey">@drawable/sym_keyboard_zwj_holo_dark</item>
         <item name="iconEmojiKey">@drawable/sym_keyboard_smiley_holo_dark</item>
     </style>
-    <style
-        name="Keyboard.GB"
-        parent="Keyboard"
-    >
+
+    <style name="Keyboard.GB" parent="Keyboard">
         <!-- This should be aligned with KeyboardSwitcher.KEYBOARD_THEMES[] -->
         <item name="themeId">1</item>
         <item name="touchPositionCorrectionData">@array/touch_position_correction_data_gb</item>
@@ -64,10 +63,8 @@
         <item name="horizontalGap">@fraction/key_horizontal_gap_gb</item>
         <item name="verticalGap">@fraction/key_bottom_gap_gb</item>
     </style>
-    <style
-        name="KeyboardView.GB"
-        parent="KeyboardView"
-    >
+
+    <style name="KeyboardView.GB" parent="KeyboardView">
         <item name="android:background">@drawable/keyboard_background_gb</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_gb</item>
         <item name="keyTypeface">bold</item>
@@ -75,16 +72,18 @@
         <item name="keyTextInactivatedColor">@color/key_text_inactivated_color_gb</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_gb</item>
         <item name="keyHintLabelColor">@color/key_hint_label_color_gb</item>
-        <item name="keyShiftedLetterHintInactivatedColor">@color/key_shifted_letter_hint_inactivated_color_gb</item>
-        <item name="keyShiftedLetterHintActivatedColor">@color/key_shifted_letter_hint_activated_color_gb</item>
+        <item name="keyShiftedLetterHintInactivatedColor">
+            @color/key_shifted_letter_hint_inactivated_color_gb
+        </item>
+        <item name="keyShiftedLetterHintActivatedColor">
+            @color/key_shifted_letter_hint_activated_color_gb
+        </item>
         <item name="keyPreviewTextColor">@color/key_text_color_gb</item>
         <item name="keyTextShadowColor">@color/key_text_shadow_color_gb</item>
         <item name="keyTextShadowRadius">2.75</item>
     </style>
-    <style
-        name="MainKeyboardView.GB"
-        parent="KeyboardView.GB"
-    >
+
+    <style name="MainKeyboardView.GB" parent="KeyboardView.GB">
         <item name="keyPreviewLayout">@layout/key_preview_gb</item>
         <item name="keyPreviewOffset">@dimen/key_preview_offset_gb</item>
         <item name="gestureFloatingPreviewTextColor">@color/highlight_color_gb</item>
@@ -98,40 +97,30 @@
     </style>
     <!-- Though {@link EmojiPalettesView} doesn't extend {@link KeyboardView}, some views inside it,
          for instance delete button, need themed {@link KeyboardView} attributes. -->
-    <style
-        name="EmojiPalettesView.GB"
-        parent="KeyboardView.GB"
-    >
+    <style name="EmojiPalettesView.GB" parent="KeyboardView.GB">
         <item name="keyBackground">@drawable/btn_keyboard_key_functional_gb</item>
         <item name="emojiTabLabelColor">@color/emoji_tab_label_color_gb</item>
     </style>
-    <style
-        name="MoreKeysKeyboard.GB"
-        parent="Keyboard.GB"
-    >
+
+    <style name="MoreKeysKeyboard.GB" parent="Keyboard.GB">
         <item name="keyboardTopPadding">0%p</item>
         <item name="keyboardBottomPadding">0%p</item>
         <item name="horizontalGap">0%p</item>
         <item name="touchPositionCorrectionData">@null</item>
     </style>
-    <style
-        name="MoreKeysKeyboardView.GB"
-        parent="KeyboardView.GB"
-    >
+
+    <style name="MoreKeysKeyboardView.GB" parent="KeyboardView.GB">
         <item name="android:background">@null</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_popup_gb</item>
         <item name="keyTypeface">normal</item>
         <item name="verticalCorrection">@dimen/more_keys_keyboard_vertical_correction_gb</item>
     </style>
-    <style
-        name="MoreKeysKeyboardContainer.GB"
-    >
+
+    <style name="MoreKeysKeyboardContainer.GB">
         <item name="android:background">@drawable/keyboard_popup_panel_background_gb</item>
     </style>
-    <style
-        name="SuggestionStripView.GB"
-        parent="SuggestionStripView"
-    >
+
+    <style name="SuggestionStripView.GB" parent="SuggestionStripView">
         <item name="android:background">@drawable/keyboard_suggest_strip_gb</item>
         <item name="suggestionStripOption">autoCorrectBold|validTypedWordBold</item>
         <item name="colorValidTypedWord">@color/highlight_color_gb</item>
@@ -140,6 +129,7 @@
         <item name="colorSuggested">@color/highlight_color_gb</item>
         <item name="alphaObsoleted">50%</item>
     </style>
+
     <style name="SuggestionWord.GB">
         <item name="android:background">@drawable/btn_suggestion_gb</item>
     </style>

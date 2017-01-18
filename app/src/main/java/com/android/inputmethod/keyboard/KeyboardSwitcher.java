@@ -58,8 +58,8 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     }
 
     private static final KeyboardTheme[] KEYBOARD_THEMES = {
-        new KeyboardTheme(0, R.style.KeyboardTheme_ICS),
-        new KeyboardTheme(1, R.style.KeyboardTheme_GB),
+            new KeyboardTheme(0, R.style.KeyboardTheme_ICS),
+            new KeyboardTheme(1, R.style.KeyboardTheme_GB),
     };
 
     private SubtypeSwitcher mSubtypeSwitcher;
@@ -76,8 +76,10 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
 
     private KeyboardLayoutSet mKeyboardLayoutSet;
 
-    /** mIsAutoCorrectionActive indicates that auto corrected word will be input instead of
-     * what user actually typed. */
+    /**
+     * mIsAutoCorrectionActive indicates that auto corrected word will be input instead of
+     * what user actually typed.
+     */
     private boolean mIsAutoCorrectionActive;
 
     private KeyboardTheme mKeyboardTheme = KEYBOARD_THEMES[0];
@@ -108,7 +110,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     }
 
     private static KeyboardTheme getKeyboardTheme(final Context context,
-            final SharedPreferences prefs) {
+                                                  final SharedPreferences prefs) {
         final String defaultIndex = context.getString(R.string.config_default_keyboard_theme_index);
         final String themeIndex = prefs.getString(PREF_KEYBOARD_LAYOUT, defaultIndex);
         try {
@@ -362,9 +364,9 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         }
 
         setContextThemeWrapper(mLatinIME, mKeyboardTheme);
-        mCurrentInputView = (InputView)LayoutInflater.from(mThemeContext).inflate(R.layout.input_view, null);
+        mCurrentInputView = (InputView) LayoutInflater.from(mThemeContext).inflate(R.layout.input_view, null);
         mMainKeyboardFrame = mCurrentInputView.findViewById(R.id.main_keyboard_frame);
-        mEmojiPalettesView = (EmojiPalettesView)mCurrentInputView.findViewById(R.id.emoji_keyboard_view);
+        mEmojiPalettesView = (EmojiPalettesView) mCurrentInputView.findViewById(R.id.emoji_keyboard_view);
 
         mKeyboardView = (MainKeyboardView) mCurrentInputView.findViewById(R.id.keyboard_view);
         mKeyboardView.setHardwareAcceleratedDrawingEnabled(isHardwareAcceleratedDrawingEnabled);
@@ -400,15 +402,15 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
             return WordComposer.CAPS_MODE_OFF;
         }
         switch (keyboard.mId.mElementId) {
-        case KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCKED:
-        case KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCK_SHIFTED:
-            return WordComposer.CAPS_MODE_MANUAL_SHIFT_LOCKED;
-        case KeyboardId.ELEMENT_ALPHABET_MANUAL_SHIFTED:
-            return WordComposer.CAPS_MODE_MANUAL_SHIFTED;
-        case KeyboardId.ELEMENT_ALPHABET_AUTOMATIC_SHIFTED:
-            return WordComposer.CAPS_MODE_AUTO_SHIFTED;
-        default:
-            return WordComposer.CAPS_MODE_OFF;
+            case KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCKED:
+            case KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCK_SHIFTED:
+                return WordComposer.CAPS_MODE_MANUAL_SHIFT_LOCKED;
+            case KeyboardId.ELEMENT_ALPHABET_MANUAL_SHIFTED:
+                return WordComposer.CAPS_MODE_MANUAL_SHIFTED;
+            case KeyboardId.ELEMENT_ALPHABET_AUTOMATIC_SHIFTED:
+                return WordComposer.CAPS_MODE_AUTO_SHIFTED;
+            default:
+                return WordComposer.CAPS_MODE_OFF;
         }
     }
 }
